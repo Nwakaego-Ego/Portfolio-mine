@@ -1,3 +1,7 @@
-body {
-  background-color: red;
+/* font-family: "Playfair Display", serif;
+font-family: "Poppins", sans-serif; */
+
+.hero {
+  text-align: center;
+  background: #f9f7fe;
 }
