@@ -4,6 +4,10 @@ font-family: "Poppins", sans-serif; */
 .hero {
   text-align: center;
   background: #f9f7fe;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* .hero .hero-section {
