@@ -1,6 +1,13 @@
 /* font-family: "Playfair Display", serif;
 font-family: "Poppins", sans-serif; */
 
+:root {
+  --font-family-heading: "Poppins", sans-serif;
+  --font-family-paragraph: "Playfair Dispaly", Serif;
+  --background-color: #f9f7fe;
+  --secondary-color: #6c63ff;
+}
+
 .hero {
   text-align: center;
   background: #f9f7fe;
@@ -58,7 +65,7 @@ h2 {
 }
 
 .btn-branding {
-  background: #6c63ff;
+  background: var(--secondary-color);
   border-radius: 4px;
   padding: 18px 46px;
   font-family: Poppins;
@@ -67,5 +74,64 @@ h2 {
   font-size: 18px;
   line-height: 27px;
   color: #ffffff;
-  /* width: 300px; */
+}
+.featured-project-heading {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+}
+
+.btn-branding-coffee {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 16px;
+
+  border: 1px solid var(--secondary-color);
+  padding: 15px 30px;
+  color: #6c63ff;
+}
+
+.coffee-project {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 85px;
+  margin-bottom: 35px;
+}
+
+.about-coffee {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.coffee-lorem-section {
+  margin: 50px 60px;
+}
+
+.coffee-image {
+  max-width: 100%;
+  height: auto;
+  /* margin: 30px; */
+}
+
+@media screen and (max-width: 900px) {
+  .coffee-image {
+    display: none;
+  }
+
+  .coffee-project {
+    font-weight: 30px !important;
+    line-height: 40px;
+  }
+
+  .coffee-lorem-section {
+    text-align: center;
+  }
 }
