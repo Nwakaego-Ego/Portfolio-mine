@@ -127,11 +127,7 @@ h2 {
   }
 
   .coffee-project {
-    font-weight: 30px !important;
     line-height: 40px;
-  }
-
-  .coffee-lorem-section {
-    text-align: center;
+    font-size: 40px;
   }
 }
