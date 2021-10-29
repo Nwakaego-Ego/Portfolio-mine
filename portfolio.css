@@ -58,76 +58,79 @@ h1 {
 
 h2 {
   margin-bottom: 49px;
-  font-family: Poppins;
+  font-family: var(--font-family-heading);
   font-weight: normal;
   font-size: 24px;
-  color: #272142;
 }
 
 .btn-branding {
   background: var(--secondary-color);
   border-radius: 4px;
   padding: 18px 46px;
-  font-family: Poppins;
+  font-family: var(--font-family-heading);
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
   color: #ffffff;
 }
-.featured-project-heading {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 27px;
-  /* identical to box height */
+
+.weather-project-title {
+  font-style: Bold;
+  font-size: 50px;
+  line-height: 50px;
 }
 
-.btn-branding-coffee {
-  font-family: Poppins;
-  font-weight: 500;
-  font-size: 16px;
-
-  border: 1px solid var(--secondary-color);
-  padding: 15px 30px;
-  color: #6c63ff;
-}
-
-.coffee-project {
-  font-family: Playfair Display;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 64px;
-  line-height: 85px;
-  margin-bottom: 35px;
-}
-
-.about-coffee {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: normal;
+.lorem {
+  font-family: var(--font-family-paragraph);
+  font-style: Regular;
   font-size: 16px;
   line-height: 30px;
+  margin-bottom: 30px;
 }
 
-.coffee-lorem-section {
+.lorem-section {
   margin: 50px 60px;
 }
 
-.coffee-image {
+.weather-image {
   max-width: 100%;
-  height: auto;
-  /* margin: 30px; */
+}
+
+.btn-branding-weather {
+  padding: 14px 30px;
+  color: #6c63ff;
+  border: 1px solid #6c63ff;
+  font-size: var(--font-family-heading);
 }
 
 @media screen and (max-width: 900px) {
-  .coffee-image {
+  .weather-image {
     display: none;
   }
 
-  .coffee-project {
-    line-height: 40px;
-    font-size: 40px;
+  .lorem-section {
+    margin: 0;
+  }
+  .weather-complete-app {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 35px;
+    margin: 0;
+    line-height: 60px;
+  }
+
+  .hero {
+    padding: 160px 20px 80px 20px;
+  }
+
+  .weather-project-title {
+    margin-bottom: 20px;
+  }
+
+  .featured-project-heading {
+    margin-bottom: 20px !important;
   }
 }
