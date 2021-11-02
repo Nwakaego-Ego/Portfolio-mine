@@ -40,7 +40,7 @@ h1 {
   font-family: Playfair Display;
   font-weight: bold;
   font-size: 70px;
-  line-height: 50px;
+  line-height: 30px;
   color: #000000;
   margin-bottom: 45px;
 }
@@ -48,10 +48,11 @@ h1 {
 .about-section h1 {
   font-family: Playfair Display;
   font-style: Bold;
-  font-size: 64px;
-  line-height: 85px;
+  font-size: 55px;
+  line-height: 65px;
   /* line-height: 100%; */
   color: #000000;
+  margin-bottom: 15px;
 }
 h2 {
   margin-bottom: 49px;
@@ -64,7 +65,7 @@ h2 {
   font-family: Poppins;
   font-style: Bold;
   font-size: 18px;
-  line-height: 27px;
+  line-height: 15px;
   color: #272142;
   margin: 29px 80px 28px 120px;
 }
@@ -123,7 +124,7 @@ h2 {
 }
 
 .about-section img {
-  width: 450px;
+  width: 500px;
   border-radius: 6px;
 }
 .btn-branding-weather {
