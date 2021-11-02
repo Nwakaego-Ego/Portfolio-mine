@@ -92,6 +92,15 @@ h2 {
   color: #ffffff;
 }
 
+.btn-branding-about-section {
+  background: var(--secondary-color);
+  border-radius: 4px;
+  font-family: var(--font-family-heading);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+}
+
 .weather-project-title {
   font-style: Bold;
   font-size: 50px;
@@ -124,7 +133,7 @@ h2 {
 }
 
 .about-section img {
-  width: 500px;
+  width: 450px;
   border-radius: 6px;
 }
 .btn-branding-weather {
