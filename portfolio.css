@@ -15,9 +15,10 @@ font-family: "Poppins", sans-serif; */
   padding: 160px 20px;
 }
 
-.about {
-  text-align: center;
+.content {
+  /* text-align: center; */
   padding: 160px 20px;
+  margin: 30px;
 }
 
 .hero p {
@@ -45,7 +46,7 @@ h1 {
   margin-bottom: 45px;
 }
 
-.about-section h1 {
+.content-section h1 {
   font-family: Playfair Display;
   font-style: Bold;
   font-size: 55px;
@@ -54,6 +55,13 @@ h1 {
   color: #000000;
   margin-bottom: 15px;
 }
+
+.work-page h1 {
+  font-size: 64px;
+  /* line-height: 80px; */
+  padding: 60px 80px 40px 30px;
+}
+
 h2 {
   margin-bottom: 49px;
   font-family: var(--font-family-heading);
@@ -61,7 +69,7 @@ h2 {
   font-size: 24px;
 }
 
-.about-section h2 {
+.content-section h2 {
   font-family: Poppins;
   font-style: Bold;
   font-size: 18px;
@@ -70,7 +78,16 @@ h2 {
   margin: 29px 80px 28px 120px;
 }
 
-.about-section p {
+.content h3 {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.work-page p {
+  line-height: 0 !important;
+}
+
+.content-section p {
   font-family: Poppins;
   font-style: Regular;
   font-size: 16px;
@@ -133,8 +150,9 @@ h2 {
   width: 546px;
 }
 
-.about-section img {
+.content-section img {
   width: 450px;
+  height: 325px;
   border-radius: 6px;
 }
 .btn-branding-weather {
@@ -142,6 +160,11 @@ h2 {
   color: #6c63ff;
   border: 1px solid #6c63ff;
   font-size: var(--font-family-heading);
+}
+
+.footer {
+  margin-right: 90px;
+  /* background-color: red; */
 }
 
 @media screen and (max-width: 900px) {
