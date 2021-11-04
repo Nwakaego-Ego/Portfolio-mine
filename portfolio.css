@@ -8,6 +8,16 @@ font-family: "Poppins", sans-serif; */
   --secondary-color: #6c63ff;
 }
 
+.nav-container {
+  padding: 20px 20px;
+  justify-content: space-between;
+  /* background-color: red; */
+}
+
+li {
+  display: inline;
+}
+
 .hero {
   text-align: center;
   background: #f9f7fe;
