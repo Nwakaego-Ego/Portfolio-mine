@@ -9,13 +9,31 @@ font-family: "Poppins", sans-serif; */
 }
 
 .nav-container {
-  padding: 20px 20px;
-  justify-content: space-between;
-  /* background-color: red; */
+  padding: 20px 0px;
 }
 
-li {
+nav li {
   display: inline;
+  line-height: 45px;
+  margin-left: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #272142;
+  transition: all 250ms ease-in-out;
+}
+nav a:hover {
+  color: #6c63ff !important;
+}
+
+nav li.active a {
+  color: #6c63ff;
+}
+
+nav ul {
+  padding: 0;
+  font-family: var(--font-family-heading);
 }
 
 .hero {
@@ -205,5 +223,26 @@ h2 {
 
   .featured-project-heading {
     margin-bottom: 20px !important;
+  }
+
+  ul {
+    margin-right: 80px;
+  }
+
+  nav li {
+    font-size: 12px;
+    margin: 3px;
+    /* font-size: 12px;
+
+    margin: 0; */
+    /* width: 5px; */
+  }
+
+  .nav-container img {
+    width: 40px;
+
+    height: 40px;
+    padding: 0 0 0 15px;
+    /* line-height: 15px; */
   }
 }
