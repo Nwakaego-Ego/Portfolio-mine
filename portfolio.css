@@ -36,11 +36,16 @@ nav ul {
   font-family: var(--font-family-heading);
 }
 
+nav img {
+  border-radius: 50%;
+  /* border: 5px solid #6c63ff; */
+}
+
 .hero {
   text-align: center;
   background: #f9f7fe;
 
-  padding: 160px 20px;
+  padding: 140px 20px;
 }
 
 .content {
@@ -229,6 +234,10 @@ h2 {
     margin-right: 80px;
   }
 
+  a {
+    font-size: 14px;
+  }
+
   nav li {
     font-size: 12px;
     margin: 3px;
@@ -239,10 +248,11 @@ h2 {
   }
 
   .nav-container img {
-    width: 40px;
+    width: 50px;
 
     height: 40px;
     padding: 0 0 0 15px;
+    border-radius: 4px;
     /* line-height: 15px; */
   }
 }
