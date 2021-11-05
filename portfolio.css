@@ -195,10 +195,23 @@ h2 {
   font-size: var(--font-family-heading);
 }
 
-.footer {
-  margin-right: 90px;
-  /* background-color: red; */
+.footer-work-inquiry {
+  padding: 49px 119px 50px 119px;
+  background: #f9f7fe;
+  border-radius: 4px;
 }
+
+h3 {
+  font-size: 48px;
+}
+
+.social-links {
+  display: flex;
+}
+
+/* .footer {
+  margin-right: 90px;
+} */
 
 @media screen and (max-width: 900px) {
   .weather-image {
@@ -241,10 +254,6 @@ h2 {
   nav li {
     font-size: 12px;
     margin: 3px;
-    /* font-size: 12px;
-
-    margin: 0; */
-    /* width: 5px; */
   }
 
   .nav-container img {
@@ -253,6 +262,5 @@ h2 {
     height: 40px;
     padding: 0 0 0 15px;
     border-radius: 4px;
-    /* line-height: 15px; */
   }
 }
