@@ -2,10 +2,13 @@
 font-family: "Poppins", sans-serif; */
 
 :root {
-  --font-family-heading: "Poppins", sans-serif;
-  --font-family-paragraph: "Playfair Dispaly", Serif;
+  --font-family-secondary: "Poppins", sans-serif;
+  --font-family-primary: "Playfair Dispaly", Serif;
   --background-color: #f9f7fe;
-  --secondary-color: #6c63ff;
+  --main-color: #6c63ff;
+  --pseudo-color: #000000;
+  --secondary-color: rgba(39, 33, 66, 0.7);
+  --header-color: #272142;
 }
 
 /* body {
@@ -41,7 +44,10 @@ nav li.active a {
 
 nav ul {
   padding: 0;
-  font-family: var(--font-family-heading);
+  font-family: var(--font-family-heading) !important;
+  /* background: red !important; */
+  /* font-size: 16px !important; */
+  color: var(--header-color);
 }
 
 nav img {
@@ -51,7 +57,7 @@ nav img {
 
 .hero {
   text-align: center;
-  background: #f9f7fe;
+  background: var(--background-color);
 
   padding: 100px 20px;
 }
@@ -63,12 +69,13 @@ nav img {
 }
 
 .hero p {
-  font-family: Poppins;
+  font-family: var(--font-family-secondary);
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 54px;
-  color: #272142;
+  color: var(--header-color);
+
   margin-bottom: 15px;
 }
 
@@ -79,28 +86,37 @@ h2 {
 }
 
 h1 {
-  font-family: Playfair Display;
+  font-family: var(--font-family-primary);
   font-weight: bold;
   font-size: 60px;
   line-height: 30px;
-  color: #000000;
+  color: var(--pseudo-color);
   margin-bottom: 45px;
 }
 
+.column {
+  width: 546px;
+  height: 505px;
+}
 .about-content-section h1 {
-  font-family: Playfair Display;
+  font-family: var(--font-family-primary);
   font-style: Bold;
-  font-size: 45px;
+  font-size: 25px;
   line-height: 55px;
-  /* line-height: 100%; */
-  color: #000000;
+
+  color: var(--pseudo-color);
   margin-bottom: 15px;
+}
+
+.about-img {
+  margin-top: 20px;
 }
 
 .work-page h1 {
   font-size: 64px;
-  /* line-height: 80px; */
+  line-height: 80px;
   padding: 60px 80px 40px 30px;
+  color: var(--pseudo-color);
 }
 
 h2 {
@@ -111,35 +127,47 @@ h2 {
 }
 
 .content-section h2 {
-  font-family: Poppins;
+  font-family: var(--font-family-secondary);
   font-style: Bold;
   font-size: 18px;
   line-height: 15px;
-  color: #272142;
-  margin: 29px 80px 28px 120px;
+  color: var(--header-color);
+
+  margin-bottom: 25px;
 }
 
 .content h3 {
   font-size: 24px;
   line-height: 1.5;
+  color: var(--pseudo-color);
 }
 
 .work-page p {
-  line-height: 0 !important;
+  /* line-height: 0 !important; */
+  font-family: var(--font-family-secondary) !important;
+  font-size: 14px !important;
+  color: var(--secondary-color) !important;
+  font-weight: normal !important;
+}
+
+.built-with {
+  position: relative;
+  right: 15px;
 }
 
 .content-section p {
-  font-family: Poppins;
+  font-family: var(--font-family-secondary);
   font-style: Regular;
   font-size: 16px;
-  line-height: 30px;
+  margin: 0;
+
   /* Line height: 125% */
 
-  color: rgba(39, 33, 66, 0.7);
+  color: var(--secondary-color);
 }
 
 .btn-branding {
-  background: var(--secondary-color);
+  background: var(--main-color);
   border-radius: 4px;
   padding: 18px 46px;
   font-family: var(--font-family-heading);
@@ -151,13 +179,15 @@ h2 {
 }
 
 .btn-branding-about-section {
-  background: var(--secondary-color);
-  border-radius: 4px;
+  background: var(--main-color);
+  /* border-radius: 4px; */
+  padding: 18px 46px;
   font-family: var(--font-family-heading);
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   color: white;
+  margin-bottom: 20px !important;
 }
 
 .weather-project-title {
@@ -189,6 +219,7 @@ h2 {
 
 .weather-image-logo {
   width: 546px;
+  height: 394px;
 }
 
 .content-section img {
@@ -213,6 +244,11 @@ h3 {
   font-size: 48px;
 }
 
+.work h3 {
+  font-family: var(--font-family-secondary);
+  color: var(--pseudo-color);
+}
+
 .email-link {
   font-family: Poppins;
   font-style: Medium;
@@ -221,12 +257,17 @@ h3 {
 }
 
 .email-link a {
-  color: black;
+  font-family: var(--font-family-secondary);
+  color: var(--pseudo-color);
 }
 
 .email-link a:hover {
   color: #6c63ff;
   opacity: 0.7;
+}
+
+.contact-social-links {
+  font-family: var(--font-family-secondary);
 }
 
 footer .social-links a {
@@ -241,6 +282,12 @@ footer .social-links a {
 footer .social-links a:hover {
   background-color: #6c63ff;
 }
+
+/* .open-source-link {
+  font-family: var(--font-family-secondary) !important;
+  border: 1px solid blue !important;
+  background: blue;
+} */
 
 @media screen and (max-width: 900px) {
   .weather-image {
@@ -260,8 +307,23 @@ footer .social-links a:hover {
     line-height: 60px;
   }
 
+  .about-content-section h1 {
+    font-size: 25px;
+  }
+
+  .work-page h1 {
+    font-size: 40px;
+    line-height: 40px;
+    padding: 10px;
+  }
+
   .hero {
-    padding: 160px 20px 80px 20px;
+    padding: 80px 20px 80px 20px;
+  }
+
+  .column {
+    width: 469px;
+    height: 400px;
   }
 
   .weather-project-title {
@@ -269,7 +331,8 @@ footer .social-links a:hover {
   }
 
   .featured-project-heading {
-    margin-bottom: 20px !important;
+    margin-bottom: 25px !important;
+    text-align: center;
   }
 
   ul {
@@ -291,5 +354,27 @@ footer .social-links a:hover {
     height: 40px;
     padding: 0 0 0 15px;
     border-radius: 4px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  .content {
+    padding: 0;
+  }
+
+  .btn-branding-about-section {
+    align-items: center;
+    margin-left: 100px;
+  }
+
+  .work-page p {
+    font-size: 12px;
+    /* line-height: 40px; */
+  }
+
+  .contact-section {
+    text-align: center;
   }
 }
